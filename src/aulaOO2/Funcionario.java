@@ -41,4 +41,9 @@ public class Funcionario {
 	double getBonus() {
 		return this.salario * 0.05;
 	}
+
+	public void verifica() {
+		// TODO Auto-generated method stub
+		
+	}
 }

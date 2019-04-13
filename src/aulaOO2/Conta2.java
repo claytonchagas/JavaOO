@@ -1,9 +1,9 @@
 package aulaOO2;
 
-public class Conta2 {
+abstract class Conta2 {
 	private int numero;
 	private String nome;
-	private double saldo;
+	protected double saldo;
 	private double limite;
 
 	boolean sacar(double valor) {
@@ -23,7 +23,5 @@ public class Conta2 {
 		return this.saldo;
 	}
 	
-	void correcao(double taxa) {
-		this.saldo += this.saldo * taxa;
-	}
+	abstract void correcao();
 }
